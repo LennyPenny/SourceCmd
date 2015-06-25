@@ -162,9 +162,11 @@ bool CSourceCommand::Init( int pid )
 					// (old) Pattern: 8B 44 24 04 50 E8 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 83 C4 08 E8 ? ? ? ? C2 04 00
 					// (old) Pattern: 55 8B EC 8B 45 08 50 E8 ? ? ? ? 68 ? ? ? ? E8 ? ? ? ? 83 C4 08 5D C2 04 00
 					// Pattern: 55 8B EC 8B 45 08 50 E8 ? ? ? ? 83 C4 04 5D C2 04 00
+
+					// ngb's note: All patterns below have been edited. https://github.com/rannmann/SourceCmd/issues/2
 					if ( void* p = FindPattern( dump, size,
-						"\x55\x8B\xEC\x8B\x45\x08\x50\xE8\x00\x00\x00\x00\x83\xC4\x04\x5D\xC2\x04\x00",
-						"\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\x00\x00\x00\xFF\xFF\xFF\xFF\xFF\xFF\xFF" ) )
+						"\x55\x8B\xEC\xFF\x75\x08\xE8\x00\x00\x00\x00\x83\xC4\x04\xE8\x00\x00\x00\x00\x5D\xC2\x04\x00",
+						"\xFF\xFF\xFF\xFF\xFF\xFF\xFF\x00\x00\x00\x00\xFF\xFF\xFF\xFF\x00\x00\x00\x00\xFF\xFF\xFF\xFF" ) )
 					{
 						mpfnRunCmd = reinterpret_cast<void*>( (size_t)p - (size_t)dump + (size_t)hmEngine );
 						free( dump );
