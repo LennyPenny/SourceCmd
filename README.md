@@ -1,6 +1,7 @@
 SourceCmd - ngb's version
 =========
 ***NOTE: I AM NOT THE ORIGINAL AUTHOR OF SOURCECMD, CREDITS TO @RANNMANN/CRYZBL/CASUAL FOR CREATING IT.***
+
 ***I will try to preserve most of the original words here.***
 
 This tool allows you to run console commands in your favourite source engine game (without having to enter it in the console).
