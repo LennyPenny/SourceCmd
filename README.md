@@ -20,9 +20,7 @@ Usage
 ### Interactive Mode (only supports 1 instance at a time):
 * Launch your favourite source engine game. 
 * Open SourceCmd.exe
-* Type the name of the game's executable and press enter.
-* **For CSGO: csgo.exe**
-* **For CS:S: hl2.exe**
+* Type the name of the game's executable (in the working list below) and press enter.
 * Type any console command you want.
 
 
@@ -32,3 +30,15 @@ SourceCmd.exe \<process\> \<command\>
 Example:
 
     SourceCmd.exe "hl2.exe" "echo Hello World!"
+
+### Confirmed working list:
+* CSGO (csgo.exe)
+* CS:S (hl2.exe)
+
+### Q&A
+**Q**: Why isn't Garry's Mod, TF2, <insert any Source Engine games> in the working list?
+A: Since I don't own some games/do not have them installed due to saving space + no more playing it, I can't test almost every Source Engine games available even when it's on my Steam game library.
+
+I will appreciate it if someone can report whenever if the game is working or not via issues.
+
+(Oh and, I tried Garry's Mod and the game just crashes few seconds later after sending command to it, that is probably due to different pattern than CS:S. I'll find a fix ASAP)
