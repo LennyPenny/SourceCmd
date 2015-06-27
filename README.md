@@ -12,7 +12,7 @@ This tool allows you to run console commands in your favourite source engine gam
 
 Both issues are not a major problem for me, but it seems that one is able to fix the second one.
 
-Consider that I am coming from ISO C++ background I am still pretty new to MSVC++. Forgive me if the updates are slow. :/
+Consider that I am coming from ISO C++ background I am still pretty new to MSVC++. Forgive me if there are any slow updates.
 
 Full source code included.
 Released under GPLv3 http://www.gnu.org/licenses/gpl.html (As original repository)
