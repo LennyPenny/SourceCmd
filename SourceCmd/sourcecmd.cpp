@@ -172,6 +172,16 @@ bool CSourceCommand::Init( int pid )
 						free( dump );
 						return true;
 					}
+
+					// Added by ngb: the code below is for csgo.exe, the guy who published issue #2 above managed to find the pattern + mask of csgo.exe
+					else if (void* p = FindPattern(dump, size,
+						"\x55\x8B\xEC\x8B\x55\x08\x33\xC9\x6A\x00\xE8\x00\x00\x00\x00\x6A\x00\xBA\x00\x00\x00\x00\x33\xC9\xE8\x00\x00\x00\x00\x83\xC4\x08\xE8\x00\x00\x00\x00\x5D\xC2\x04\x00",
+						"\x55\x8B\xEC\x8B\x55\x08\x33\xC9\x6A\x00\xE8\x00\x00\x00\x00\x6A\x00\xBA\x00\x00\x00\x00\x33\xC9\xE8\x00\x00\x00\x00\x83\xC4\x08\xE8\x00\x00\x00\x00\x5D\xC2\x04\x00"))
+					{
+						mpfnRunCmd = reinterpret_cast<void*>((size_t)p - (size_t)dump + (size_t)hmEngine);
+						free(dump);
+						return true;
+					}
 				}
 				free( dump );
 			}
