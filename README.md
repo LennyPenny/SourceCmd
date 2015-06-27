@@ -6,10 +6,13 @@ SourceCmd - ngb's version
 
 This tool allows you to run console commands in your favourite source engine game (without having to enter it in the console).
 
-> For now every time you execute a command the console will yell something about not being in the main thread, ignore that.
+> For now every time you execute a command the game's console will yell something about not being in the main thread, ignore that.
+>
 > This works with clients in text-mode, but only grabs the first instance of the process, not all.
 
-Consider that I am pretty new to Visual C++ I will not be able to fix it for now (if I can find any ways to do it).
+Both issues are not a major problem for me, but it seems that one is able to fix the second one.
+
+Consider that I am coming from ISO C++ background I am still pretty new to MSVC++. Forgive me if the updates are slow. :/
 
 Full source code included.
 Released under GPLv3 http://www.gnu.org/licenses/gpl.html (As original repository)
