@@ -42,4 +42,4 @@ Example:
 **Q**: Why isn't Garry's Mod, TF2, <insert any Source Engine games> in the working list?
 A: Since I don't own some games/do not have them installed due to saving space + no more playing it, I can't test almost every Source Engine games available even when it's on my Steam game library.
 
-I will appreciate it if someone can report whenever if the game is working or not via issues.
+I will appreciate it if someone can report whenever if a game is working or not via issues.
