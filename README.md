@@ -35,10 +35,11 @@ Example:
 * CSGO (csgo.exe)
 * CS:S (hl2.exe)
 
+### Confirmed **NOT*** working list (will try to fix):
+* Garry's Mod (hl2.exe) - crashes a few seconds later after sending first command via SourceCmd
+
 ### Q&A
 **Q**: Why isn't Garry's Mod, TF2, <insert any Source Engine games> in the working list?
 A: Since I don't own some games/do not have them installed due to saving space + no more playing it, I can't test almost every Source Engine games available even when it's on my Steam game library.
 
 I will appreciate it if someone can report whenever if the game is working or not via issues.
-
-(Oh and, I tried Garry's Mod and the game just crashes few seconds later after sending command to it, that is probably due to different pattern than CS:S. I'll find a fix ASAP)
