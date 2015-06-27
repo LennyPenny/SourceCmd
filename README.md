@@ -22,7 +22,7 @@ Usage
 * Open SourceCmd.exe
 * Type the name of the game's executable and press enter.
 * **For CSGO: csgo.exe**
-* **For TF2, CS:S and Garry's Mod: hl2.exe**
+* **For CS:S: hl2.exe**
 * Type any console command you want.
 
 
